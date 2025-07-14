@@ -34,7 +34,7 @@ public class InventoryTests {
     }
 
     @Test
-    public void findAndClickOnBackpack() {
+    public void findAndVerifyBackpackInformation() {
         String standardUser = CredentialsLoader.get("standardUser");
         loginPage.login(standardUser);
 
@@ -46,7 +46,7 @@ public class InventoryTests {
     }
 
     @Test
-    public void shouldVerifyRedTShirt() {
+    public void findAndVerifyRedTShirtInformation() {
         String standardUser = CredentialsLoader.get("standardUser");
         loginPage.login(standardUser);
 
