@@ -4,3 +4,4 @@ seleniumtest/target/maven-status/maven-compiler-plugin/compile/default-compile/c
 seleniumtest/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
 seleniumtest/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
 seleniumtest/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+target/**/*.*
