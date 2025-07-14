@@ -19,6 +19,7 @@ public class InventoryPage {
     public By itemRedTShirt = By.id("item_3_title_link");
     public By itemBackpack = By.id("item_4_title_link");
     public By itemFleeceJacket = By.id("item_5_title_link");
+    public By itemPrice = By.className("inventory_details_price");
     
     public InventoryPage(WebDriver driver) {
         this.driver = driver;

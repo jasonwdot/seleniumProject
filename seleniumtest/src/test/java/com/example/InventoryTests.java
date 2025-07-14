@@ -40,7 +40,20 @@ public class InventoryTests {
 
         Assert.assertEquals(loginPage.url + "inventory.html", driver.getCurrentUrl());
         driver.findElement(inventoryPage.itemBackpack).click();
+        Assert.assertEquals("$29.99", driver.findElement(inventoryPage.itemPrice).getText());
         Assert.assertEquals("Sauce Labs Backpack", driver.findElement(inventoryPage.itemTitle).getText());
+        loginPage.logout();
+    }
+
+    @Test
+    public void shouldVerifyRedTShirt() {
+        String standardUser = CredentialsLoader.get("standardUser");
+        loginPage.login(standardUser);
+
+        Assert.assertEquals(loginPage.url + "inventory.html", driver.getCurrentUrl());
+        driver.findElement(inventoryPage.itemRedTShirt).click();
+        Assert.assertEquals("$15.99", driver.findElement(inventoryPage.itemPrice).getText());
+        Assert.assertEquals("T-Shirt (Red)", driver.findElement(inventoryPage.itemTitle).getText());
         loginPage.logout();
     }
     
